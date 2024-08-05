@@ -15,7 +15,6 @@ jobs:
           script: |
             const pullRequest = context.payload.pull_request;
             if(!pullRequest) {
-              process.exitCode = 0;
               return;
             }
             const title = pullRequest.title;
